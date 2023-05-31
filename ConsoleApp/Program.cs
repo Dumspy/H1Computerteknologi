@@ -1,21 +1,13 @@
-﻿using UserFolder;
+﻿int number = 0;
 
-var userFolder = new UserFolder.Controller();
-
-switch (Console.ReadKey().Key)
+while (true)
 {
-    case ConsoleKey.D1:
-        Console.WriteLine();
-        Console.Write("Enter file name: ");
-        var fileName = Console.ReadLine();
-        if (fileName != null) userFolder.CreateFile(fileName);
-        break;
-    case ConsoleKey.D2:
-        Console.WriteLine();
-        Console.WriteLine(userFolder.GetPath());
-        break;
-    default:
-        Console.WriteLine();
-        Console.WriteLine("Unknown key pressed");
-        break;
+    // Increase the number by one
+    number++;
+
+    // Print the current number
+    Console.WriteLine(number);
+
+    // Wait for one second
+    Thread.Sleep(1000);
 }
