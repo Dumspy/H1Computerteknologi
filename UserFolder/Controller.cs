@@ -21,7 +21,7 @@ public class Controller
 
     public void CreateFile(string fileName)
     {
-        string filePath = Path.Combine(_path, fileName);
+        string filePath = Path.Combine(_path, fileName, ".txt");
 
         if (File.Exists(filePath))
         {
